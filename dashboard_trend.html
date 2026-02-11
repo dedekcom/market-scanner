@@ -1,0 +1,115 @@
+
+    <html>
+    <head>
+      <title>TREND dashboard</title>
+      <link rel="stylesheet" href="screener_style.css">
+      <style>
+        th { cursor: pointer; }
+      </style>
+    </head>
+    <body>
+
+    <h1>TREND DASHBOARD</h1>
+
+    <h2>Top 20 tickers</h2>
+    <table id="ranking_table" class="dataframe stats-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>TrendPullbackToSMA200</th>
+      <th>group_score</th>
+      <th>combined_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZABKA</td>
+      <td>2.73</td>
+      <td>2.73</td>
+      <td>5.47</td>
+    </tr>
+    <tr>
+      <td>MOSTALWAR</td>
+      <td>1.25</td>
+      <td>1.25</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>NESTMEDIC</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>MEDICALG</td>
+      <td>-0.20</td>
+      <td>-0.20</td>
+      <td>-0.40</td>
+    </tr>
+    <tr>
+      <td>SILVAIR-REGS</td>
+      <td>-0.29</td>
+      <td>-0.29</td>
+      <td>-0.59</td>
+    </tr>
+    <tr>
+      <td>CDPROJEKT</td>
+      <td>-0.29</td>
+      <td>-0.29</td>
+      <td>-0.59</td>
+    </tr>
+    <tr>
+      <td>EUROSNACK</td>
+      <td>-0.45</td>
+      <td>-0.45</td>
+      <td>-0.91</td>
+    </tr>
+    <tr>
+      <td>MCI</td>
+      <td>-0.46</td>
+      <td>-0.46</td>
+      <td>-0.92</td>
+    </tr>
+    <tr>
+      <td>BSH</td>
+      <td>-0.56</td>
+      <td>-0.56</td>
+      <td>-1.11</td>
+    </tr>
+    <tr>
+      <td>MOSTALZAB</td>
+      <td>-0.56</td>
+      <td>-0.56</td>
+      <td>-1.13</td>
+    </tr>
+    <tr>
+      <td>CEZ</td>
+      <td>-0.59</td>
+      <td>-0.59</td>
+      <td>-1.18</td>
+    </tr>
+    <tr>
+      <td>TOYA</td>
+      <td>-0.59</td>
+      <td>-0.59</td>
+      <td>-1.19</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h2>Strategies</h2>
+    <div class="center-box">
+        <ul>
+        <li><a href="TrendPullbackToSMA200.html">TrendPullbackToSMA200</a></li>
+        </ul>
+        <p><a href="index.html">← back to index</a></p>
+    </div>
+
+    <script src="screener_scripts.js"></script>
+    <script>
+        attachSorting('ranking_table');
+    </script>
+
+    </body>
+    </html>
+    

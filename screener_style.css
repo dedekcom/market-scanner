@@ -1,0 +1,180 @@
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #222;
+}
+
+a {
+    color: #0057ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin: 18px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 28px 0 12px;
+}
+
+h3 {
+    margin: 20px 0 10px;
+}
+
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centruje elementy blokowe */
+    text-align: center;    /* centruje tekst */
+}
+
+.center-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ===== MENU ===== */
+
+.strategy-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.strategy-row.active-group {
+    background: #eef3ff;
+}
+
+.strategy-group {
+    font-weight: bold;
+    min-width: 110px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.strategy-menu {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.menu-item.active {
+    font-weight: 700;
+    color: #0057ff;
+}
+
+/* ===== CONTAINERS ===== */
+
+.container {
+    padding: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== DASHBOARD CARDS ===== */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+.dashboard-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.dashboard-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 8px 0 0;
+}
+
+.dashboard-card li {
+    margin: 4px 0;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 95%;
+    border: 1px solid #ddd;
+}
+
+/* ===== TABLES ===== */
+
+.stats-table {
+    margin: 24px auto;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.stats-table th,
+.stats-table td {
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    text-align: center;
+}
+
+.stats-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+}
+
+/* ===== SCORE STYLES ===== */
+
+.score-high {
+    background-color: #c7f2d3;
+}
+
+.score-mid {
+    background-color: #fff3bf;
+}
+
+.score-low {
+    background-color: #ffd6d6;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    margin: 40px 0 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
