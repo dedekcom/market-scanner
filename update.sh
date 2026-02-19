@@ -6,6 +6,7 @@ set -euo pipefail
 # ======================================================
 EXPECTED_REPO="market-scanner"
 SOURCE_DIR="/c/projects/rust/boda/PortfolioGeneral2/market-lab/out/html/strategies"
+SCREENER_DIR="/c/projects/rust/boda/PortfolioGeneral2/market-lab/resources/screener_app"
 USE_ORPHAN=false
 
 # ======================================================
@@ -13,6 +14,9 @@ USE_ORPHAN=false
 # ======================================================
 delete_page() {
     echo "Deleting old page files..."
+	if [ -d "screener_app" ]; then
+		rm -rf "screener_app"
+	fi
     find . -maxdepth 1 -type f \( \
         -name "*.html" -o \
         -name "*.png"  -o \
@@ -91,6 +95,7 @@ delete_page
 # ======================================================
 echo "Copying new page files..."
 cp -r "$SOURCE_DIR"/* .
+cp -r "$SCREENER_DIR" .
 
 # ======================================================
 # COMMIT
